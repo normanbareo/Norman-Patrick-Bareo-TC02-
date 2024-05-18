@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="FA3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Employee Registration Form</h1>
+    <p>Please fill in the information requested below in order to complete the employee registration. </p>
+   
+    <form>
+        <div class="form-group">
+            <label for="firstName"><strong>Employee Name</strong></label>
+            <div class="inline-group">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label><strong>Gender</strong></label>
+            <div class="gender-group">
+                <input type="radio" id="male" name="gender" value="M" required>
+                <label for="male">M</label>
+                <input type="radio" id="female" name="gender" value="F" required>
+                <label for="female">F</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="inline-group">
+                <label for="maritalStatus"><strong>Marital Status</strong></label>
+                <label for="dob"><strong>Date of Birth</strong></label>
+            </div>
+            <div class="inline-group">
+                <select id="maritalStatus" name="maritalStatus" required>
+                    <option value="" disabled selected>Select Marital Status</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Widowed">Widowed</option>
+                    <option value="Divorced">Divorced</option>
+                </select>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="inline-group">
+                <label for="email"><strong>Email</strong></label>
+                <label for="phone"><strong>Phone</strong></label>
+            </div>
+            <div class="inline-group">
+                <input type="email" id="email" name="email" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="streetAddress"><strong>Home Address</strong></label>
+            <input type="text" id="streetAddress" name="streetAddress" placeholder="Street Address" required>
+            <div class="inline-group">
+                <input type="text" id="city" name="city" placeholder="City" required>
+                <select id="state" name="state" required>
+                    <option value="" disabled selected>Select Region</option>
+                    <option value="Ilocos Region">Ilocos Region</option>
+                    <option value="Cagayan Valley">Cagayan Valley</option>
+                    <option value="Central Luzon">Central Luzon</option>
+                    <option value="CALABARZON">CALABARZON</option>
+                    <option value="MIMAROPA">MIMAROPA</option>
+                    <option value="Bicol Region">Bicol Region</option>
+                    <option value="Western Visayas">Western Visayas</option>
+                    <option value="Central Visayas">Central Visayas</option>
+                    <option value="Eastern Visayas">Eastern Visayas</option>
+                    <option value="Zamboanga Peninsula">Zamboanga Peninsula</option>
+                    <option value="Northern Mindanao">Northern Mindanao</option>
+                    <option value="Davao Region">Davao Region</option>
+                    <option value="SOCCSKSARGEN">SOCCSKSARGEN</option>
+                    <option value="Caraga">Caraga</option>
+                    <option value="BARMM">BARMM</option>
+                </select>
+            </div>
+            <input type="text" id="zipCode" name="zipCode" placeholder="ZIP Code" required>
+        </div>
+        <button type="submit">REGISTER NEW EMPLOYEE</button>
+    </form>
+</body>
+</html>
