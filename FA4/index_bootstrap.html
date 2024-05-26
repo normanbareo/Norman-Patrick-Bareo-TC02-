@@ -6,231 +6,104 @@
     <title>Employee Registration Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            padding: 20px;
-            color: #323232
-        }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-        }
-
-
-        .bg-image {
-            background: url('https://lh3.googleusercontent.com/d/16IBjA6U130QVwK9S91dk0veY-655Q0Bg') no-repeat center center fixed;
-            background-size: 120%;
-            background-position: left 10%;
-            padding: 20px;
-        }
-
-        .bg-gray {
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-
-        .left-content {
-            padding-top: 0%;
-            text-align: left;
-            padding: 20px;
-        }
-
-        .right-content {
-            padding-top: 2%;
-            text-align: center;
-            padding-bottom: 8%;
-        }
-
-        .title {
-            color: #fcbd14;
-            font-size: 40px;
-            font-weight: bold;
-            padding-top: 30%;
-        }
-
-        .content {
-            color: #ffff;
-            font-size: 16px;
-            font-weight: 450;
-        }
-
-        .company-logo {
-            width: 350px;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .form-group {
-            margin-bottom: 5px;
-        }
-
-        .inline-group {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-        }
-
-        .inline-group input[type="text"],
-        .inline-group input[type="email"],
-        .inline-group input[type="tel"],
-        .inline-group input[type="date"],
-        .inline-group input[type="text"],
-        .inline-group input[type="text"],
-        .inline-group select {
-            padding: 5px;
-            font-size: 14px;
-            flex: 1;
-        }
-
-        .inline-group label {
-            flex: 1;
-            margin-bottom: 5px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        input[type="date"],
-        input[type="text"],
-        input[type="text"],
-        select {
-            width: 100%;
-            padding: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #c5c5c5;
-            background-color: #e4e4e4;
-            border-radius: 5px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-
-        input[type="tel"] {
-            padding: 8px;
-        }
-
-        input[type="radio"] {
-            margin-right: 5px;
-        }
-
-        .form-check-label {
-            font-size: 12px;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #237537;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #114d20;
-        }
-    </style>
 </head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 bg-image">
-                <div class="left-content text-left">
-                    <h1 class="title">Welcome to the FEU-Tech <br> Employee Registration Form!</h1>
-                    <p class="content">Please fill in the information requested below in order <br>to complete the employee registration.</p>
+<body style="font-family: 'Open Sans', sans-serif;">
+
+    <!-- Title (Left) -->
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-lg-6 d-flex align-items-start justify-content-center bg-dark text-white" style="background: url('https://lh3.googleusercontent.com/d/16IBjA6U130QVwK9S91dk0veY-655Q0Bg') no-repeat center center fixed; background-size: cover;">
+                <div class="mt-5 py-5 px-5">
+                    <h1 class="display-4 font-weight-bold" style="color: #fcbd14;" style="font-size: 35px;">Welcome to the <br> FEU-Tech Employee Registration Form!</h1>
+                    <p>Please fill in the information requested below to complete the employee registration.</p>
                 </div>
             </div>
-            <div class="col-lg-6 bg-gray">
-                <div class="right-content text-center">
-                    <img src="https://lh3.googleusercontent.com/d/1OYeIo8YG5f4KoxpS7OF-YHKLsVygpml0" alt="Company Logo" class="company-logo mb-4">
-                    <form>
-                        <div class="form-group">
-                            <label for="firstName"><strong>Employee Name</strong></label>
-                            <div class="inline-group">
-                                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-                                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+    
+    <!-- Company Logo (Right) -->
+            <div class="col-lg-6 bg-light p-5">
+                <div class="text-center mb-4">
+                    <img src="https://lh3.googleusercontent.com/d/1OYeIo8YG5f4KoxpS7OF-YHKLsVygpml0" alt="Company Logo" class="img-fluid" style="max-width: 350px;">
+                </div>
+
+                 <!-- Name (Right) -->
+                <form>
+                    <div class="form-group">
+                        <label for="firstName"><strong>Employee Name</strong></label>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
                             </div>
                         </div>
-                        <!-- Other form fields go here -->
-                            <div class="form-group">
-                                <div class="inline-group">
-                                    <label for="employeeID"><strong>Employee ID</strong></label>
-                                    <label for="gender"><strong>Gender</strong></label>
-                                </div>
-                                <div class="inline-group">
-                                    <input type="text" id="employeeID" name="employeeID" placeholder="2000-00000" required">
-                                    <select id="gender" name="gender" required>
-                                        <option value="" disabled selected>Select Gender</option>
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
-                                        <option value="Other">Other</option>
-                                        <option value="Prefer not to say">Prefer not to say</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="inline-group">
-                                    <label for="maritalStatus"><strong>Marital Status</strong></label>
-                                    <label for="dob"><strong>Date of Birth</strong></label>
-                                </div>
-                                <div class="inline-group">
-                                    <select id="maritalStatus" name="maritalStatus" required>
-                                        <option value="" disabled selected>Select Marital Status</option>
-                                        <option value="Single">Single</option>
-                                        <option value="Married">Married</option>
-                                        <option value="Widowed">Widowed</option>
-                                        <option value="Divorced">Divorced</option>
-                                    </select>
-                                    <input type="date" id="dob" name="dob" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="inline-group">
-                                    <label for="email"><strong>Email</strong></label>
-                                    <label for="phone"><strong>Phone</strong></label>
-                                </div>
-                                <div class="inline-group">
-                                    <input type="email" id="email" name="email" placeholder="2000-00000@fit.edu.ph"required>
-                                    <input type="tel" id="phone" name="phone" placeholder="+63" required inputmode="numeric" pattern="\d*">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="streetAddress"><strong>Home Address</strong></label>
-                                <input type="text" id="streetAddress" name="streetAddress" placeholder="Street Address" required>
-                                <div class="inline-group">
-                                    <label for="city"><strong>City</strong></label>
-                                    <label for="province"><strong>Province</strong></label>
-                                </div>
-                                <div class="inline-group">
-                                    <input type="text" id="city" name="city" placeholder="City/Municipality" required>
-                                    <select id="province" name="Province" required>
-                                        <option value="" disabled selected>Select Province</option>
+                    </div>
+                    
+                    <!-- Employee ID and Gender (Right) -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="employeeID"><strong>Employee ID</strong></label>
+                            <input type="text" class="form-control" id="employeeID" name="employeeID" placeholder="2000-00000" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="gender"><strong>Gender</strong></label>
+                            <select id="gender" name="gender" class="form-control" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Marital Status and Date of Birth (Right) -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="maritalStatus"><strong>Marital Status</strong></label>
+                            <select id="maritalStatus" name="maritalStatus" class="form-control" required>
+                                <option value="" disabled selected>Select Marital Status</option>
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Widowed">Widowed</option>
+                                <option value="Divorced">Divorced</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="dob"><strong>Date of Birth</strong></label>
+                            <input type="date" class="form-control" id="dob" name="dob" required>
+                        </div>
+                    </div>
+
+                    <!-- Email and Phone Number (Right) -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email"><strong>Email</strong></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="2000-00000@fit.edu.ph" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone"><strong>Phone</strong></label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+63" required inputmode="numeric" pattern="\d*">
+                        </div>
+                    </div>
+
+                     <!-- Address (Right) -->
+                    <div class="form-group">
+                        <label for="streetAddress"><strong>Home Address</strong></label>
+                        <input type="text" class="form-control" id="streetAddress" name="streetAddress" placeholder="Street Address" required>
+                    </div>
+                    
+
+                    <!-- City and Province (Right) -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="city"><strong>City</strong></label>
+                            <input type="text" class="form-control" id="city" name="city" placeholder="City/Municipality" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="province"><strong>Province</strong></label>
+                            <select id="province" name="province" class="form-control" required>
+                                        <option value="" disabled selected>Select Province</option>>
                                         <option value="Abra">Abra</option>
                                         <option value="Agusan del Norte">Agusan del Norte</option>
                                         <option value="Agusan del Sur">Agusan del Sur</option>
@@ -316,13 +189,15 @@
                                         <option value="Zamboanga del Sur">Zamboanga del Sur</option>
                                         <option value="Zamboanga Sibugay">Zamboanga Sibugay</option>
                                     </select>
-                                </div>
-                                <div class="inline-group">
-                                    <label for="region"><strong>Region</strong></label>
-                                    <label for="zipcode"><strong>Zip Code</strong></label>
-                                </div>
-                                <div class="inline-group">
-                                    <select id="region" name="region" required>
+                        </div>
+                    </div>
+                    
+
+                     <!-- Region and Zip Code (Right) -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="region"><strong>Region</strong></label>
+                            <select id="region" name="region" class="form-control" required>
                                         <option value="" disabled selected>Select Region</option>
                                         <option value="National Capital Region (NCR)">National Capital Region (NCR)</option>
                                         <option value="Ilocos Region">Ilocos Region</option>
@@ -341,25 +216,26 @@
                                         <option value="Caraga">Caraga</option>
                                         <option value="BARMM">BARMM</option>
                                     </select>
-                                    <input type="text" id="zipcode" name="zipcode" placeholder="Zip Code" required inputmode="numeric" pattern="\d*">
-                                </div>
-                        
-
-
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="certifyCheckbox" required>
-                            <label class="form-check-label" for="certifyCheckbox">
-                                I hereby certify that all the information provided above is true and accurate to the best of my knowledge.
-                            </label>
                         </div>
-                        <br>
-                        <br>
-                        <div class="button-container">
-                            <button type="submit">REGISTER EMPLOYEE</button>
+                        <div class="form-group col-md-6">
+                            <label for="zipcode"><strong>Zip Code</strong></label>
+                            <input type="text" class="form-control" id="zipcode" name="zipcode" placeholder="Zip Code" required inputmode="numeric" pattern="\d*">
                         </div>
-                    </form>
-                </div>
+                    </div>
+
+                    <!-- Checkbox (Right) -->
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="certifyCheckbox" required>
+                        <label class="form-check-label" for="certifyCheckbox" style="font-size: 12px;">
+                            I hereby certify that all the information provided above is true and accurate to the best of my knowledge.
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                     <!-- Button (Right) -->
+                    <button type="submit" class="btn btn-success btn-block">REGISTER EMPLOYEE</button>
+                    <br>
+                </form>
             </div>
         </div>
     </div>
