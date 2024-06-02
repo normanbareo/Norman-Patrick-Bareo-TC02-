@@ -1,1 +1,479 @@
-w
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Resume</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="bg-dark text-white">
+
+
+    <!-- HEADER -->
+    <div class="container mt-5">
+        <div class="text-center position-relative full-width-container">
+            <table class="table table-bordered">
+                <tr>
+                    <td class>
+                        <h2 class="subheading">MULTIMEDIA DESIGNER</h2>
+                    </td>
+                    <td class="color-scheme">
+                        <img src="https://lh3.googleusercontent.com/d/120jymFjetQRuonHe4sn9NS_G4zCHduwa" alt="Color Scheme">
+                    </td>
+                    <td>
+                        <h2 class="subheading">MARKETING SPECIALIST</h2>
+                    </td>
+                    <td class="globe" rowspan="2">
+                        <img src="https://lh3.googleusercontent.com/d/1lMbpSVb4aMML-Gc5KL-Eu1HoJVhIhxBm" alt="Globe">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="align-middle">
+                        <h1 class="display-4 headline">NORMAN BAREO</h1>
+                    </td>
+                </tr>
+                <tr class="equal-width-row">
+                    <td class="buttons">
+                        <img src="https://lh3.googleusercontent.com/d/1YeZnIB-wCnzbQLkjAFJ1aGbduKYUA23z" alt="Digital Buttons">
+                    </td>
+                    <td class="buttons">
+                        <img src="https://lh3.googleusercontent.com/d/12FxB-jr3XdwzhL8PKduVnDl5Z8USLvgk" alt="Photog Buttons">
+                    </td>
+                    <td class="buttons">
+                        <img src="https://lh3.googleusercontent.com/d/13lApg0AjnvKPhF1wzJciL-VfKEXyPN3T" alt="Video Buttons">
+                    </td>
+                    <td class="buttons">
+                        <img src="https://lh3.googleusercontent.com/d/1_x2z4C_Ny5BYPoSg1ARQIgHeaUcKs1wL" alt="Data Buttons">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+     
+    <!-- LEFT SIDE  -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+
+                <!-- PROFIILE PHOTO  -->
+                <div class="box-outline">
+                    <img src="https://lh3.googleusercontent.com/d/1EGbyihgRE-5rvBLIS1iidrvVzcscbwjs" alt="Norman">
+                    <img src="https://lh3.googleusercontent.com/d/167_T5EId_7HHOhTrHhZy3sdi15__Zdwm" alt="Random Vertical Photo">
+                </div>
+                <br>
+
+
+                <!-- PROFILE SUMMARY  -->
+                <div class="profile-container">
+                    <table class="table left-table-bordered">
+                        <tr>
+                            <td><h2 class="left-section-title">PROFILE</h2></td>
+                        </tr>
+                        <tr class="summary-text">
+                            <td>Norman Patrick Bareo is a multimedia designer and marketing specialist based in Manila, who specializes in graphic design, front-end development, social media marketing, photography, and video editing.
+                                <br><br> Over the past two years, he has honed his expertise by collaborating with diverse industries including real estate, financial services, retail, skincare, business consulting, advertising, and non-profit organizations. 
+                                <br><br>His career goal is to help businesses thrive by leveraging his skills to enhance their design aesthetics, elevate their branding, construct strategic social media contents, and streamline operations through data analytics. 
+                                </td>
+                        </tr>
+                    </table>
+                
+
+                     <!-- CONTACT -->
+                        <table class="table left-table-bordered">
+                            <tr>
+                                <td>
+                                    <h2 class="left-section-title">CONTACT</h2>
+                                </td>
+                            </tr>
+            <tr class="contact-detail">
+                <td>
+                    <div class="contact-number">
+                        <a href="tel:+639675760857" class="contact-link">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <h3 class="contact-label">(+63)9675760857</h3>
+                    </a>                        
+                    </div>
+                    
+
+                     <div class="email">   
+                        <a href="mailto:normanpatrickbareo@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <h3 class="contact-label">normanpatrickbareo</h3>
+                            <br><h4 class="google">@gmail.com</h4>
+                        </a>
+                    </div>
+                    
+                    <div class="facebook">  
+                        <a href="https://www.linkedin.com/in/normanbareo" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin contact-icon"></i>
+                            <h3 class="contact-label">Norman Patrick Bareo</h3>
+                            <br><h4 class="linkedin">www.linkedin.com</h4>
+                        </a>
+                    </div>
+
+                    <div class="behance">
+                        <a href="https://www.behance.net/normanbareo" target="_blank" class="contact-link">
+                            <i class="fab fa-behance contact-icon"></i>
+                            <h3 class="contact-label">Norman Patrick Bareo</h3>
+                            <br><h4 class="website">www.behance.net</h4>
+                        </a>
+                    </div>
+                    <br>
+                </td>
+            </tr> 
+        </table>
+
+            <!-- EDUCATION -->
+
+            <table class="table left-table-bordered">
+                <tr>
+                    <td> <h2 class="left-section-title">EDUCATION</h2>
+                </tr>
+                    <tr class="education-details">
+                        <td>
+                            <div class="college">
+                                <h3 class="educ-title">COLLEGE:</h3>
+                                <ul class="education-list">
+                                    <li class="education-item">
+                                        <h4 class="program">Bachelor of Science in Information Technology</h4>
+                                        <h4 class="spec">with Specialization in Business Analytics</p>
+                                        <h4 class="uni">FEU - Institute of Technology</p>
+                                        <h4 class="year">(2023 - Present)</p>
+                                    </li>
+                                    <li class="education-item">
+                                        <h4 class="program">Bachelor of Science in Civil Engineering</h4>
+                                        <h4 class="uni">University of Santo Tomas</p>
+                                        <h4 class="year">(2019 - 2022)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="shs">
+                                <h3 class="educ-title">SENIOR HIGH SCHOOL:</h3>
+                                <ul class="education-list">
+                                    <li class="education-item">
+                                        <h4 class="program">Science, Technology, Engineering, and Mathematics Strand</h4>
+                                        <h4 class="uni">University of Santo Tomas</p>
+                                        <h4 class="year">(2017 - 2019)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
+            </table>
+
+        </div>
+  
+        </div>
+
+
+
+            <!-- RIGHT SIDE  -->
+            <div class="col-md-8">
+
+                <!-- EXPERIENCE  -->
+                <div class="experience-container">
+                    <div class="experience-title-box">
+                        <h2 class="experience-title">EXPERIENCE</h2>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 mb-3">
+                            <div class="experience-box">
+                                <h3 class="job-position">MULTIMEDIA DESIGNER</h3>
+                                <h4 class="job-type">Freelance, (July 2021 - Present)</h4>
+                                <ul class="job-description">
+                                    <li>
+                                        <p>● Designs, illustrates, and edit visually-appealing static and dynamic contents intended for social media publishing.</p>
+                                    </li>
+                                    <li>
+                                        <p>● Develops cohesive visual branding elements including logos, color schemes, and style guides.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 mb-3">
+                            <div class="experience-box">
+                                <h3 class="job-position">MARKETING SPECIALIST</h3>
+                                <h4 class="job-type">Freelance, (July 2021 - Present)</h4>
+                                <ul class="job-description">
+                                <li>
+                                    <p>● Conducts market research to inform content strategies that align with target audience interests and industry trends.</p>
+                                </li>
+                                <li>
+                                    <p>● Generates and analyzes reports from social media metrics to measure the effectiveness of campaigns.</p>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 mb-3">
+                            <div class="experience-box">
+                                <h3 class="job-position">GRAPHIC DESIGNER</h3>
+                                <h4 class="job-type">Sowenscale, (March 2023 - July 2023)</h4>
+                                <ul class="job-description">
+                                    <li>
+                                        <p>● Designed, illustrated, and edited visually-appealing static and dynamic contents intended for social media publishing.</p>
+                                    </li>
+                                    <li>
+                                        <p>● Developed and maintain cohesive visual branding elements including logos, color schemes, and style guides.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 mb-3">
+                            <div class="experience-box">
+                                <h3 class="job-position">MULTIMEDIA EDITOR INTERN</h3>
+                                <h4 class="job-type">Remedy, (October 2021 - March 2022)</h4>
+                                <ul class="job-description">
+                                <li>
+                                    <p>● Edited the Instagram stories of the customer reviews intended for social media publishing.</p>
+                                </li>
+                                <li>
+                                    <p>● Produced the Instagram story contents from October 2022 to April 2023.</p>
+                                </li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 mb-3">
+                            <div class="experience-box">
+                                <h3 class="job-position">GRAPHIC DESIGNER INTERN</h3>
+                                <h4 class="job-type">Great Place To Work® Philippines, (July 2022 - August 2022)</h4>
+                                <ul class="job-description">
+                                    <li>
+                                        <p>● Designed, illustrated, and edited visually-appealing static and dynamic contents intended for social media publishing.</p>
+                                    </li>
+                                    <li>
+                                        <p>● Produced the templated holiday and quote card contents from August 2022 to December 2022.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 mb-3">
+                            <div class="experience-box">
+                                <h3 class="job-position">MARKETING INTERN</h3>
+                                <h4 class="job-type">Out of the Box Creatives,<br>(September 2021 - January 2022)</h4>
+                                <ul class="job-description">
+                                <li>
+                                    <p>● Researched and strategized for relevant and unique content ideas intended for social media publishing.</p>
+                                </li>
+                                <li>
+                                    <p>● Crafted an engaging and creative social media copies for the content calendar for November 2021</p>
+                                </li>
+                            </ul>
+                            <br>
+                            </div>
+                        </div>
+                </div>
+                <br>
+
+                <!-- SKILLS  -->
+                <div class="skills-container">
+                    <div class="skills-title-box">
+                        <h2 class="skills-title">SKILLS</h2>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="skill-box text-center">
+                                <br>
+                                <i class="fas fa-paint-brush"></i>
+                                <h4 class="skill-text"><br> GRAPHIC <br> DESIGN</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill-box text-center">
+                                <br>
+                                <i class="fas fa-image"></i>
+                                <h4 class="skill-text"><br>PHOTO <br> MANIPULATION</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill-box text-center">
+                                <br>
+                                <i class="fas fa-code"></i>
+                                <h4 class="skill-text"><br>FRONT-END DEVELOPMENT</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="skill-box text-center">
+                                <br>
+                                <i class="fas fa-chart-line"></i>
+                                <h4 class="skill-text"><br>DATA <br> ANALYSIS</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill-box text-center">
+                                <br>
+                                <i class="fas fa-bullseye"></i>
+                                <h4 class="skill-text"><br>CONTENT <br> STRATEGY</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill-box text-center">
+                                <br>
+                                <i class="fas fa-globe"></i>
+                                <h4 class="skill-text"><br>SOCIAL MEDIA MANAGEMENT</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="skill-box text-center">
+                                <br>
+                                <i class="fas fa-camera"></i>
+                                <h4 class="skill-text"><br>MEDIA <br> COVERAGE</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill-box text-center">
+                                <br>
+                                <i class="fas fa-video"></i>
+                                <h4 class="skill-text"><br>VIDEO <br> EDITING</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill-box text-center">
+                                <br>
+                                <i class="fas fa-film"></i>
+                                <h4 class="skill-text"><br>MOTION <br> GRAPHICS</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                
+
+
+                <!-- SOFTWARE  -->
+                <div class="software-container">
+                    <div class="software-title-box">
+                        <h2 class="software-title">SOFTWARE</h2>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="software-box text-center">
+                                <br>
+                                <img src="https://lh3.googleusercontent.com/d/1S9Z6cPPin2g-VUUKE62ic-EOW5-qs0uZ" alt="Photoshop">
+                                <h4 class="software-text"><br> ADOBE PHOTOSHOP <br> CC 2021</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="software-box text-center">
+                                <br>
+                                <img src="https://lh3.googleusercontent.com/d/1x-R4qfvVSBFmLns1x9-fwMK-aQUo2X7Q" alt="Illustrator">
+                                <h4 class="software-text"><br>ADOBE ILLUSTRATOR <br> CC 2021</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="software-box text-center">
+                                <br>
+                                <img src="https://lh3.googleusercontent.com/d/17HPJifG4QEdjWKtsSIA8rYer1UrWKbPn" alt="AE">
+                                <h4 class="software-text"><br>ADOBE AFTER<br>EFFECTS CC 2021</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="software-box text-center">
+                                <br>
+                                <img src="https://lh3.googleusercontent.com/d/19itfI7730Npfy59iNEWoVn2nL4Jdk91M" alt="Premiere">
+                                <h4 class="software-text"><br>ADOBE PREMIERE<br> PRO CC 2021</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="software-box text-center">
+                                <br>
+                                <img src="https://lh3.googleusercontent.com/d/1JOUFyPmZTwTAwS3T26TXi3tcW7ZEiwvP" alt="Lightroom">
+                                <h4 class="software-text"><br>ADOBE LIGHTROOM <br> CC 2021</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="software-box text-center">
+                                <br>
+                                <img src="https://img.icons8.com/?size=100&id=amXjtNWVYSKP&format=png&color=FFFFFF" alt="Figma">
+                                <h4 class="software-text"><br>FIGMA<br><br></h4>
+                            </div>
+                        </div>
+                    </div>
+                        <br>
+                    
+                     <div class="row">
+                        <div class="col-md-4">
+                            <div class="software-box text-center">
+                                <br>
+                                <img src="https://img.icons8.com/?size=100&id=MSSIu6fxvJKT&format=png&color=FFFFFF" alt="Canva">
+                                <h4 class="software-text"><br>CANVA</h4>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="software-box text-center">
+                                <br>
+                                <img src="https://img.icons8.com/?size=100&id=Hd082AfY0mbD&format=png&color=FFFFFF" alt="Buffer">
+                                <h4 class="software-text"><br>BUFFER</h4>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="software-box text-center">
+                                <br>
+                                <img src="https://img.icons8.com/?size=100&id=1rWM8zYmJ1ks&format=png&color=FFFFFF" alt="Meta">
+                                <h4 class="software-text"><br>META CREATOR STUITE</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                        <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="software-box text-center">
+                                <br>
+                                <img src="https://img.icons8.com/?size=100&id=121602&format=png&color=FFFFFF" alt="Studio Code">
+                                <h4 class="software-text"><br>MICROSOFT VISUAL STUDIO CODE 2022</h4>
+                            </div>
+                        </div>
+                    
+                    <div class="col-md-4">
+                        <div class="software-box text-center">
+                            <br>
+                            <img src="https://img.icons8.com/?size=100&id=XZfQhFwZm1qP&format=png&color=FFFFFF" alt="Power BI">
+                            <h4 class="software-text"><br>MICROSOFT POWER BI 2024</h4>
+                        </div>
+                    </div>
+                <div class="col-md-4">
+                    <div class="software-box text-center">
+                        <br>
+                        <img src="https://img.icons8.com/?size=100&id=11594&format=png&color=FFFFFF" alt="Excel">
+                        <h4 class="software-text"><br>MICROSOFT EXCEL 2024</h4>
+                    </div>
+                </div>
+            </div>
+                    <br>
+            </div>
+                
+                <br>
+</body>
+</html>
