@@ -99,49 +99,33 @@
         .prev:hover, .next:hover {
             background-color: rgba(0, 0, 0, 1);
         }
-        .right-column .horizontal-polaroid {
-            width: 90%;
-            max-width: 400px;
-            padding: 10px;
-            margin: 10px 0;
-            background: white;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-            transform: rotate(-2deg);
-            transition: transform 0.5s, opacity 0.5s;
-            opacity: 1;
-        }
-        .right-column .horizontal-polaroid img {
-            width: 100%;
-            height: auto;
-            border-bottom: 10px solid white;
-        }
-        .right-column .horizontal-polaroid .content {
-            padding: 5px 10px;
-            text-align: center;
-            font-family: 'Indie Flower', cursive;
-            font-size: 14px;
-        }
-        .right-column .vertical-polaroids {
+        .right-column {
             display: flex;
-            width: 90%;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
-        .right-column .vertical-polaroid {
+        .right-row {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        .horizontal-polaroid {
             width: 45%;
             padding: 10px;
-            margin: 10px 0;
             background: white;
             box-shadow: 0 8px 16px rgba(0,0,0,0.3);
             transform: rotate(-2deg);
             transition: transform 0.5s, opacity 0.5s;
             opacity: 1;
         }
-        .right-column .vertical-polaroid img {
+        .horizontal-polaroid img {
             width: 100%;
             height: auto;
             border-bottom: 10px solid white;
         }
-        .right-column .vertical-polaroid .content {
+        .horizontal-polaroid .content {
             padding: 5px 10px;
             text-align: center;
             font-family: 'Indie Flower', cursive;
@@ -150,75 +134,70 @@
     </style>
 </head>
 <body>
+    <div class="scrapbook-title">Infographic Polaroids</div>
 
-<div class="scrapbook-title">Infographic Polaroids</div>
-
-<div class="container">
-    <div class="left-column">
-        <div class="slideshow-container">
-            <div class="polaroid active">
-                <img src="https://via.placeholder.com/800x300" alt="Image 1">
-                <div class="content">
-                    <h2>Infographic Title 1</h2>
-                    <p>Some interesting facts or information about the topic shown in this Polaroid.</p>
+    <div class="container">
+        <div class="left-column">
+            <div class="slideshow-container">
+                <div class="polaroid active">
+                    <img src="https://via.placeholder.com/800x300" alt="Image 1">
+                    <div class="content">
+                        <h2>Infographic Title 1</h2>
+                        <p>Some interesting facts or information about the topic shown in this Polaroid.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="polaroid">
-                <img src="https://via.placeholder.com/500x300" alt="Image 2">
-                <div class="content">
-                    <h2>Infographic Title 2</h2>
-                    <p>Another set of data or insights related to the theme presented.</p>
+                <div class="polaroid">
+                    <img src="https://via.placeholder.com/500x300" alt="Image 2">
+                    <div class="content">
+                        <h2>Infographic Title 2</h2>
+                        <p>Another set of data or insights related to the theme presented.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="polaroid">
-                <img src="https://via.placeholder.com/400x300" alt="Image 3">
-                <div class="content">
-                    <h2>Infographic Title 3</h2>
-                    <p>Additional information, stats, or explanations on the subject matter.</p>
+                <div class="polaroid">
+                    <img src="https://via.placeholder.com/400x300" alt="Image 3">
+                    <div class="content">
+                        <h2>Infographic Title 3</h2>
+                        <p>Additional information, stats, or explanations on the subject matter.</p>
+                    </div>
                 </div>
-            </div>
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        </div>
-    </div>
-
-    <div class="right-column">
-        <div class="horizontal-polaroid">
-            <img src="https://via.placeholder.com/400x150" alt="Fun Fact Horizontal">
-            <div class="content">
-                <h3>Fun Fact Horizontal</h3>
-                <p>Interesting detail or fact.</p>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
             </div>
         </div>
-        <div class="vertical-polaroids">
-            <div class="vertical-polaroid">
-                <img src="https://via.placeholder.com/200x300" alt="Fun Fact 1">
-                <div class="content">
-                    <h3>Fun Fact 1</h3>
-                    <p>Interesting detail or fact.</p>
+    
+        <div class="right-column">
+            <div class="right-row">
+                <div class="horizontal-polaroid">
+                    <img src="https://via.placeholder.com/400x150" alt="Fun Fact Horizontal 1">
+                    <div class="content">
+                        <h3>Fun Fact Horizontal 1</h3>
+                        <p>Interesting detail or fact.</p>
+                    </div>
+                </div>
+                <div class="horizontal-polaroid">
+                    <img src="https://via.placeholder.com/400x150" alt="Fun Fact Horizontal 2">
+                    <div class="content">
+                        <h3>Fun Fact Horizontal 2</h3>
+                        <p>Another interesting detail or fact.</p>
+                    </div>
                 </div>
             </div>
-            <div class="vertical-polaroid">
-                <img src="https://via.placeholder.com/200x300" alt="Fun Fact 2">
-                <div class="content">
-                    <h3>Fun Fact 2</h3>
-                    <p>Another interesting detail or fact.</p>
+            <div class="right-row">
+                <div class="horizontal-polaroid">
+                    <img src="https://via.placeholder.com/400x150" alt="Fun Fact Horizontal 2">
+                    <div class="content">
+                        <h3>Fun Fact Horizontal 2</h3>
+                        <p>Another interesting detail or fact.</p>
+                    </div>
+                </div>
+                <div class="horizontal-polaroid">
+                    <img src="https://via.placeholder.com/400x150" alt="Fun Fact Horizontal 2">
+                    <div class="content">
+                        <h3>Fun Fact Horizontal 2</h3>
+                        <p>Another interesting detail or fact.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.polaroid');
-
-    function changeSlide(n) {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + n + slides.length) % slides.length;
-        slides[currentSlide].classList.add('active');
-    }
-</script>
-
 </body>
 </html>
+
