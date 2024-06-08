@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaroid Style Infographics</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            background: url('your-background-image-url-here'), #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .scrapbook-title {
+            background-color: #ffeb3b;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            font-family: 'Indie Flower', cursive;
+            font-size: 30px;
+            text-align: center;
+            margin: 20px 0;
+            transform: rotate(-2deg);
+            position: relative;
+        }
+        .container {
+            display: flex;
+            width: 90%;
+            flex-grow: 1;
+        }
+        .left-column, .right-column {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .slideshow-container {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            height: 500px;
+        }
+        .polaroid {
+            position: absolute;
+            display: none;
+            width: 100%;
+            padding: 15px;
+            background: white;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            transform: rotate(-2deg);
+            transition: transform 0.5s, opacity 0.5s;
+            opacity: 0;
+        }
+        .polaroid img {
+            width: 100%;
+            height: auto;
+            border-bottom: 20px solid white;
+        }
+        .polaroid .content {
+            padding: 10px 20px;
+            text-align: center;
+            font-family: 'Indie Flower', cursive;
+            font-size: 18px;
+        }
+        .polaroid.active {
+            display: block;
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            z-index: 1;
+        }
+        .prev {
+            left: -50px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .next {
+            right: -50px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 1);
+        }
+        .right-column .horizontal-polaroid {
+            width: 90%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            background: white;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            transform: rotate(-2deg);
+            transition: transform 0.5s, opacity 0.5s;
+            opacity: 1;
+        }
+        .right-column .horizontal-polaroid img {
+            width: 100%;
+            height: auto;
+            border-bottom: 10px solid white;
+        }
+        .right-column .horizontal-polaroid .content {
+            padding: 5px 10px;
+            text-align: center;
+            font-family: 'Indie Flower', cursive;
+            font-size: 14px;
+        }
+        .right-column .vertical-polaroids {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+        }
+        .right-column .vertical-polaroid {
+            width: 45%;
+            padding: 10px;
+            margin: 10px 0;
+            background: white;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            transform: rotate(-2deg);
+            transition: transform 0.5s, opacity 0.5s;
+            opacity: 1;
+        }
+        .right-column .vertical-polaroid img {
+            width: 100%;
+            height: auto;
+            border-bottom: 10px solid white;
+        }
+        .right-column .vertical-polaroid .content {
+            padding: 5px 10px;
+            text-align: center;
+            font-family: 'Indie Flower', cursive;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="scrapbook-title">Infographic Polaroids</div>
+
+<div class="container">
+    <div class="left-column">
+        <div class="slideshow-container">
+            <div class="polaroid active">
+                <img src="https://via.placeholder.com/800x300" alt="Image 1">
+                <div class="content">
+                    <h2>Infographic Title 1</h2>
+                    <p>Some interesting facts or information about the topic shown in this Polaroid.</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="https://via.placeholder.com/500x300" alt="Image 2">
+                <div class="content">
+                    <h2>Infographic Title 2</h2>
+                    <p>Another set of data or insights related to the theme presented.</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <img src="https://via.placeholder.com/400x300" alt="Image 3">
+                <div class="content">
+                    <h2>Infographic Title 3</h2>
+                    <p>Additional information, stats, or explanations on the subject matter.</p>
+                </div>
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="right-column">
+        <div class="horizontal-polaroid">
+            <img src="https://via.placeholder.com/400x150" alt="Fun Fact Horizontal">
+            <div class="content">
+                <h3>Fun Fact Horizontal</h3>
+                <p>Interesting detail or fact.</p>
+            </div>
+        </div>
+        <div class="vertical-polaroids">
+            <div class="vertical-polaroid">
+                <img src="https://via.placeholder.com/200x300" alt="Fun Fact 1">
+                <div class="content">
+                    <h3>Fun Fact 1</h3>
+                    <p>Interesting detail or fact.</p>
+                </div>
+            </div>
+            <div class="vertical-polaroid">
+                <img src="https://via.placeholder.com/200x300" alt="Fun Fact 2">
+                <div class="content">
+                    <h3>Fun Fact 2</h3>
+                    <p>Another interesting detail or fact.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.polaroid');
+
+    function changeSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+</script>
+
+</body>
+</html>
